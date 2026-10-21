@@ -1,0 +1,5 @@
+{
+  "input_archive_sha256": "da55a769e8634492275251dd9f844afb52832742a6e9dcb7ce7f708ad50933b9",
+  "public_archive_sha256": "9d7bce3ca05e417f8e8dde7783c9fe52374c3929378f4ee0b7a8c7dd492a0fca",
+  "processing": "Payload-only ZIP, recompressed; signing/DRM sidecar and account metadata excluded. Remaining payload bytes preserved."
+}

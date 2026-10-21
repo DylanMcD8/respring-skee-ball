@@ -1,0 +1,21 @@
+.DS_Store
+.build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.mobileprovision
+*.p12
+*.p8
+*.cer
+*.key
+.env
+.env.*
+__pycache__/
+*.pyc
+Local.xcconfig
+release-output/
+
+# IDE and local build caches
+.swiftpm/
+*.xcresult/
+*.log

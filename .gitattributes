@@ -1,0 +1,4 @@
+# Preserve vendored bytes: Cargo validates these against .cargo-checksum.json.
+Vendor/** -text
+*.ipa -text
+*.png -text

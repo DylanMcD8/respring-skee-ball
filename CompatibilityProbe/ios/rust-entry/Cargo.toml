@@ -1,0 +1,24 @@
+[package]
+name = "chuzzle-ios-entry"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[workspace]
+
+[lib]
+name = "chuzzle_compatibility"
+crate-type = ["staticlib"]
+
+[dependencies]
+touchHLE = { path = "../../compatibility-core", default-features = false, features = ["ios-static"] }
+
+[features]
+default = []
+aot-reference = ["touchHLE/aot-reference"]
+
+# Optimize across runtime crate boundaries, particularly the interpreter/memory
+# helpers used for every original ARM instruction.
+[profile.release]
+lto = "thin"
+codegen-units = 1
