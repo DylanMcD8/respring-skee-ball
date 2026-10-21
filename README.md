@@ -3,27 +3,23 @@
 </p>
 
 # Respring – Skee-Ball
-The original Skee-Ball, restored for modern iPhone/iPad devices as part of Respring.
+The original Skee-Ball game, restored with the help of Codex (GPT-6 Astra and GPT 6.1 Sol) for modern iPhones as part of project Respring!
 
 ### How does it work?
-This build runs the original Unity game using ARM/Thumb CPU emulation and a modified touchHLE compatibility runtime. A native iOS host handles the window, graphics presentation, input, and audio. No JIT is required; this is not a full native rewrite or a fully translated game.
+This build runs the original Unity game using ARM/Thumb CPU emulation and a modified touchHLE compatibility runtime. A native iOS host handles the window, graphics presentation, input, and audio. No JIT is required!
 
 ### Enhancements
-- Full Resolution: let the 3D game world fill the display while keeping the UI centered in its original 3.5-inch iPhone layout.
-- Live resizing: rendering and touch mapping adapt to rotation and Duo display changes.
-- Modern lifecycle: background pause/resume and audio handling.
-- Touch controls: a Home gesture guard helps prevent accidental exits while throwing.
-- Offline fixes: fixes for end-of-round and redemption alerts, with legacy login services bypassed where needed.
-- App Icon: an editable Icon Composer icon with modern appearances.
+- Full Resolution: the 3D portion of the game will fill the display, while keeping the UI centered in its original 3.5-inch iPhone layout.
+- Live Resizing: rendering and touch mapping adapt to rotation window size changes. Great for iPhone Duo!
+- App Icon: I have "remastered" the app icon with Icon Composer with full support for Default, Dark, Clear, and Tinted modes.
 
 ### Notes
-- Use Settings → Apps → Skee-Ball → Allow Full Resolution, then close and reopen the game.
-- The 3D world expands with the window; the original UI retains its centered layout.
-- Original textures and UI artwork are preserved.
-- Discontinued online services and Plus+ accounts are unavailable.
-- If you encounter a crash or another problem, please open an Issue on this repository.
+- The app enhancements can be enabled or disabled in Settings → Apps → Skee Free.
+- The game UI must remain in the 3.5-inch aspect ratio, as it was never designed to be responsive/adaptive to other sizes.
+- Discontinued online services and Plus+ accounts are unavailable and have been removed.
+- It's not perfect! There may still be crashes. If you experience a crash or some other issue, please open an Issue on this repository.
 
-This restoration and its technical documentation were developed with help from generative AI.
+As stated before, this project was achieved through the usage of generative AI. Outside of this README and Releases release notes, most things were written by an AI agent.
 
 ## How to Install
 Download **Skee-Ball.ipa** from [Releases](https://github.com/DylanMcD8/respring-skee-ball/releases). It is an **unsigned ARM64 device IPA**: use your own signing/sideloading workflow to sign it for your device. [Sideloadly](https://sideloadly.io) is one option.
